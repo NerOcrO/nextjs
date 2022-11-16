@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 
 import styles from '../components/Home.module.css'
+import Recherche from '../components/Recherche'
 
-export default function Home() {
+export default function PageRecherche() {
   return (
     <div className={styles['container']}>
       <Head>
@@ -21,17 +21,7 @@ export default function Home() {
         />
       </Head>
 
-      <main className={styles['main']}>
-        <Link href="recherche">
-          {'Une autre page'}
-        </Link>
-        <h1 className={styles['title']}>
-          {'Welcome to '}
-          <a href="https://nextjs.org">
-            {'Next.js!'}
-          </a>
-        </h1>
-      </main>
+      <Recherche />
 
       <footer className={styles['footer']}>
         <a
